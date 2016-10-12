@@ -1,0 +1,34 @@
+{
+    "name": "visionappscz/video-id-extractor",
+    "type": "library",
+    "description": "Extract video ID from the link. Supports youtube, facebook, vimeo",
+    "keywords": ["video","id","extract"],
+    "homepage": "https://www.visionapps.cz",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "VisionApps s.r.o.",
+            "email": "info@visionapps.cz",
+            "homepage": "http://www.visionapps.cz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "squizlabs/php_codesniffer": "^2.7",
+        "friendsofphp/php-cs-fixer": "^1.12"
+    },
+    "require-dev": {
+        "codeception/codeception": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "VideoIdExtractor\\": "src/VideoIdExtractor/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
