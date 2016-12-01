@@ -6,7 +6,7 @@ use VideoIdExtractor\Exception\VideoIdExtractException;
 
 class YoutubeVideoIdExtractor implements VideoIdExtractorInterface
 {
-    const PATTERN = '/^http[s]?\:\/\/[a-zA-Z0-9_\-\.\/\?#\=\&]+(youtu.be\/|v\/|e\/|u\/\w+\/|embed\/|v=)([^#\&\?]+)[\?#]?[^#]*[#]?.*/';
+    const PATTERN = '/^(http[s]?\:\/\/|)[a-zA-Z0-9_\-\.\/\?#\=\&]+(youtu.be\/|v\/|e\/|u\/\w+\/|embed\/|v=)([^#\&\?]+)[\?#]?[^#]*[#]?.*/';
 
     /**
      * @param string $link
@@ -23,6 +23,6 @@ class YoutubeVideoIdExtractor implements VideoIdExtractorInterface
             throw new VideoIdExtractException(sprintf('This link %s is not a valid youtube link', $link));
         }
 
-        return $matches[2];
+        return $matches[3];
     }
 }
