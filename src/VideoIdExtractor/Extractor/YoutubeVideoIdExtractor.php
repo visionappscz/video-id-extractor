@@ -6,6 +6,7 @@ use VideoIdExtractor\Exception\VideoIdExtractException;
 
 class YoutubeVideoIdExtractor implements VideoIdExtractorInterface
 {
+    // @codingStandardsIgnoreLine
     const PATTERN = '/^(http[s]?\:\/\/|)[a-zA-Z0-9_\-\.\/\?#\=\&]+(youtu.be\/|v\/|e\/|u\/\w+\/|embed\/|v=)([^#\&\?]+)[\?#]?[^#]*[#]?.*/';
 
     /**
