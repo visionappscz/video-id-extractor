@@ -13,6 +13,7 @@ class VimeoService
 
     /**
      * VimeoService constructor.
+     *
      * @param \VideoIdExtractor\Service\VimeoApiService $vimeoApiService
      */
     public function __construct(VimeoApiService $vimeoApiService)

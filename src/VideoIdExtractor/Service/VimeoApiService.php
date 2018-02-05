@@ -18,6 +18,7 @@ class VimeoApiService
 
     /**
      * VimeoService constructor.
+     *
      * @param string $link
      */
     public function __construct($link)
