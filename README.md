@@ -1,8 +1,6 @@
 # Video ID Extractor
 
 [![Travis build status](https://travis-ci.org/visionappscz/video-id-extractor.png?branch=master)](https://travis-ci.org/visionappscz/video-id-extractor)
-[![PHP 7 ready](http://php7ready.timesplinter.ch/visionappscz/video-id-extractor/badge.svg)](https://travis-ci.org/visionappscz/video-id-extractor)
-[![Dependency Status](https://www.versioneye.com/user/projects/5927e25e6725bd00166483bd/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5927e25e6725bd00166483bd)
 
 This library extracts video IDs from links to hosted videos.
 
